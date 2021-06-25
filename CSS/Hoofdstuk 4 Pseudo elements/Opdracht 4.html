@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+p{
+    text-align: center;
+    font-size: 30px;
+    font-family: fantasy;
+}
+
+.blok{
+   position: relative;
+   border: 1px solid; 
+   width: 500px;
+   height: 100px;
+   background-color:rgb(50, 160, 160);
+}
+
+.balk::before { 
+    content: " ";
+    position: absolute;
+    border: solid orangered;
+    background-color: orangered;
+    width: 80px;
+    height: 3px;
+}
+
+.balk::after { 
+    content: " ";
+    position: absolute;
+    border: solid orangered;
+    background-color: orangered;
+    width: 3px;
+    height: 80px;
+}
+
+.balk2::before { 
+    content: " ";
+    position: absolute;
+    border: solid orangered;
+    background-color: orangered;
+    width: 80px;
+    height: 3px;
+    margin-left: 416px;
+    margin-top: 93px;
+}
+
+.balk2::after { 
+    content: " ";
+    position: absolute;
+    border: solid orangered;
+    background-color: orangered;
+    width: 3px;
+    height: 80px;
+    margin-left: 493px;
+    margin-top: 16px;
+}
+
+    </style>
+
+
+</head>
+
+
+<body>
+<div class="blok">
+    <div class="balk"></div>
+    <div class="balk2"></div>
+    <p>Button</p>
+
+</div>   
+</body>
+</html>

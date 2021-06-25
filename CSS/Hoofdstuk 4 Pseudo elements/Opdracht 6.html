@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;  
+}
+
+.container{
+    position: relative;
+    background-color:black;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    left: 100px;
+    top:50px;
+    margin-right: 100px; 
+    /* Scheid de drie container van mekaar  */  
+}
+
+.container1::before{
+    content: '';
+    border-style: solid;
+    position: absolute;
+    background-color:black;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    right: 160px;
+    top:60px;
+}
+
+.container1::after{
+    content: '';
+    border-style: solid;
+    position: absolute;
+    background-color:black;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    top: 60px;
+    left: 160px; 
+}
+
+.number{
+    position: absolute;
+    color: cornsilk;
+    size: 50px;
+    font-size: 50px;
+    right: 85px;
+    top: 70px;
+}
+
+.punt{
+    position: absolute;
+    color: white;
+    font-size: 100px;
+    left: -10px;
+    z-index: 1;
+}
+
+.punt1{
+    position: absolute;
+    color: white;
+    font-size: 100px;
+    left: 190px;
+    top: 30px;
+    z-index: 1;
+}
+
+.supercontainer{
+    position: absolute;
+    display: flex;
+    justify-content: center;   
+    text-align: center;
+    
+}
+
+    </style>
+</head>
+<body>
+    <div class="supercontainer">
+
+<div class="container">
+    <div class="number">1</div>
+    <div class="container1"><div class="punt">.</div>
+    <div class="punt1">.</div></div>   
+</div>
+
+<div class="container">
+    <div class="number">2</div>
+    <div class="container1"><div class="punt">.</div>
+    <div class="punt1">.</div></div> 
+</div>
+
+<div class="container">
+    <div class="number">3</div>
+    <div class="container1"><div class="punt">.</div>
+    <div class="punt1">.</div></div>
+</div>
+
+</div>
+</body>
+</html>

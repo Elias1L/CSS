@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <a href="Opdracht 7.html" target="_blank">Opdracht 7</a> 
+</head>
+<body>
+
+<br><br><br>
+    Opdracht 3
+    <big><p>Zie elementen voor de codes die toegepast zijn als voorbeeld.</p></big>
+    <br>
+Er zijn verschillende selectors, bijvoorbeeld;
+type selectors.
+descendant selectors.
+class selectors.
+Maak van de bovengenoemde selectors voorbeelden. Geef in je antwoord ook aan wat de voordelen zijn van elke selector.
+
+<br><br><br><br>
+
+Type selector: Type selectors past elementen aan per tagnaam. Hierin worden dan alle elementen binnen het HTML sheet aangepast aan wat er in de CSS sheet mee word gegeven. Voordeel hiervan is dat dezelfde soort elementen in 1 keer kan aanpassen zonder het indivudueel te doen per zelfde soort tag.
+Voorbeeld:
+HTML:
+<P>Hallo</P>
+<P>Doei</P>
+
+<br>
+CSS:
+#P { Background-color: Coralblue;
+	Font-size: 30px;
+}
+
+<br><br><br><br><br>
+
+
+Descendant selector:Bij descendent element-selectors wordt de stijl alleen aan een element toegevoegd, wanneer deze een nakomeling (descendent) is van één of meer andere elementen. Voordeel hiervan is dat je zelfde tags apart van mekaar kan stylen. Je kan hiermee specifiek 1 tag binnen je div id aanpassen en de rest laten zoals het is.
+Voorbeeld:
+HTML:
+<div id= "test">
+	<P>Dit is een voorbeeld</P>
+</div>
+<P>Dit is ook een voorbeeld</P>
+
+CSS:
+#test p { 
+color: red;
+font-size: 30px;
+}
+
+<br><br>
+
+Hierboven zie je dan dat er 2 P tags zijn. 1 binnen een div id, door de div id en P in te voegen bij CSS word de waarde en inhoud hiervan niet toegepast op de P tag buiten het div id.
+
+<br><br><br><br><br>
+
+Class selector: Bij class selector pas je de CSS in de HTML tag zelf. Of bij class selector zet je de id in de tag waarbij je de class in de tag zelf doet.
+Voordeel hiervan is dat je tags die hetzelfde zijn afzonderlijk van mekaar kunt bewerken in css zonder ze allemaal te nemen. Hierin worden de tags met de classes binnen in het tag alleen meegenomen in de CSS aanpassing, terwijl de andere tags zonder de class binnen de tag niet worden meegenomen in de CSS aanpassing.
+Voorbeeld:
+<br>
+<p class="center large">This paragraph refers to two classes.</p>
+
+<br><br>
+
+</body>
+</html>

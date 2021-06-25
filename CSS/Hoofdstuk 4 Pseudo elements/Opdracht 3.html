@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        p::first-line {
+          color: #ff0000;
+          font-variant: small-caps;
+        }
+
+        ::marker { 
+  color: red;
+  font-size: 23px;
+}
+
+.contentcolor ::selection {
+  color: red;
+  background: yellow;
+}
+
+        </style>
+</head>
+<body>
+
+<p>Deze pseudo element past alleen de eerst zin aan in een P element.<br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+    Aliquid non facilis consequatur laboriosam quibusdam officia tenetur<br> 
+    vel quam fugit eum tempora beatae, nemo ea,<br> 
+    voluptatum deserunt corporis aspernatur odit nisi.</p>
+
+<br>
+
+    <ul>
+        <li>Deze Pseudo element geeft kleur aan de list item nummering/markering.</li>
+        <li>Rood bolletje</li>
+        <li>Ik heb er ook 1</li>
+      </ul>
+      <ol>
+        <li>Rode cijfermarkering</li>
+        <li>Ik ben de tweede</li>
+        <li>Ik ben de derde</li>
+      </ol>
+
+      <br>
+
+      <div class="contentcolor"><h1>Deze pseudo element geeft de tekst een ander kleur als het geselecteerd word</h1</div>
+        
+</body>
+</html>

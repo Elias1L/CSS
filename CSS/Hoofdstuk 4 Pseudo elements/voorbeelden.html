@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      *
+      {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+      /* body{
+      } */
+      main{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         height: 100vh;
+         /* min-width: 1000px; */ 
+      }
+
+      div{
+         width: 125px;
+         height: 125px;
+         border-radius: 50%;
+         color: white;
+         background: black;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin-right: 6rem;
+         position: relative;
+         font-size: 2rem;
+      }
+
+      div::before{
+         content: '.';
+         display: inline-block;
+         width: 60px;
+         height: 60px;
+         border-radius: 50%;
+         background-color: black;
+         position: absolute;
+         right: 90px;
+         font-weight: bold;
+         font-size: 1.2rem;
+      }
+
+      div::after{
+         content: '.';
+         display: inline-block;
+         width: 60px;
+         height: 60px;
+         border-radius: 50%;
+         background-color: black;
+         position: absolute;
+         left: 90px;
+         font-weight: bold;
+         font-size: 1.2rem;
+      }
+
+   </style>
+</head>
+<body>
+   <main>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+   </main>
+</body>
+</html>
+
+
+<!-- EPHREM -->
+<!-- /* Ball
+ */
+    .wraper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .ball {
+      padding: 50px;
+    }
+    .ball-psedo {
+      background-color: rgb(0, 0, 0);
+      width: 150px;
+      height: 150px;
+      display: block;
+      border-radius: 50%;
+      color: #F1F1F1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .ball-psedo::before {
+      content: ".";
+      position: absolute;
+      background-color: rgb(0, 0, 0);
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      left: 100px;
+      border-radius: 50%;
+      color: #F1F1F1;
+      transform: scale(1);
+      font-size: 60px;
+      top: 50px;
+      transform: rotate(-120deg);
+      text-align: left;
+    }
+    .ball-psedo::after {
+      content: ".";
+      position: absolute;
+      background-color: rgb(0, 0, 0);
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      right: 100px;
+      font-size: 60px;
+      border-radius: 50%;
+      color: #F1F1F1;
+      top: 40px;
+      /* transform: scale(-1); */
+      transform: rotate(120deg);
+      text-align: left;
+    }
+  </style>
+12:11
+<div class="container">
+    <div class="wraper">
+      <div class="ball">
+        <span class="ball-psedo">
+          <h1>1</h1>
+        </span>
+      </div>
+    <div class="ball">
+      <span class="ball-psedo">
+      <h1>2</h1>
+      </span> </div>
+    <div class="ball"> <span class="ball-psedo">
+      <h1>3</h1>
+      </span> </div>
+  </div>
+    </div> -->

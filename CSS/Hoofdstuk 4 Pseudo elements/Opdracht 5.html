@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      
+      .box {
+        position: relative;
+        border: solid black 2px;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      p {
+        position: absolute;
+        text-align: center;
+        color: aliceblue;
+        line-height: 40px;
+        
+      }
+
+      img::before {
+        content: url(https://i.pinimg.com/originals/62/11/cb/6211cbfa1034484458dccba367a58b16.jpg);
+        width: 100%;
+        height: 100%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p>
+        The snowy owl (Bubo scandiacus), also known as the polar owl, the white
+        owl and the Arctic owl, is a large, white owl of the true owl
+        family.<br> Owls are native to the Arctic regions of both North
+        America and the Palearctic, breeding mostly on the tundra. <br>It has a
+        number of unique adaptations to its habitat and lifestyle, which are
+        quite distinct from other extant owls.<br> One of the largest species of
+        owl, it is the only owl with largely white plumage. Males tend to be
+        a purer white overall while females tend to more have more extensive
+        flecks of dark brown.
+      </p>
+      <img
+        src="https://i.pinimg.com/originals/62/11/cb/6211cbfa1034484458dccba367a58b16.jpg"
+        alt=""
+      />
+    </div>
+  </body>
+</html>
